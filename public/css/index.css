@@ -37,6 +37,7 @@ nav .nav {
 nav .nav button {
     background: none;
     border: none;
+    border-radius: 50px;
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
@@ -45,6 +46,7 @@ nav .nav button {
 
 nav .nav button:hover {
     background-color: #f0f0f0;
+
 }
 
 nav .nav .post-property {
