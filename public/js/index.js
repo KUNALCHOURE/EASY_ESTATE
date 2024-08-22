@@ -1,13 +1,18 @@
 let slideIndex = 0;
-showSlides();
+const slideInterval = 3000; // Time in milliseconds for each slide
 
 function showSlides() {
-    let slides = document.querySelectorAll('.slides img');
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = 'block';  
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
+    const slides = document.querySelectorAll('.slides img');
+    const totalSlides = slides.length;
+
+    // Reset the slideIndex if it goes beyond the last slide
+    slideIndex = (slideIndex + 1) % totalSlides;
+
+    // Calculate the transform value to show the next image
+    const offset = -slideIndex * 100; // Move by 100% for each image
+
+    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
 }
+
+// Run the showSlides function every 'slideInterval' milliseconds
+setInterval(showSlides, slideInterval);

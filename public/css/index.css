@@ -220,17 +220,16 @@ footer button:hover {
     background-color: #c00;
 }
 .image-slider {
-    position: relative; /* Changed from absolute to relative */
+    position: relative;
     width: 100%;
-    height: 500px; /* Fixed height for visibility */
+    height: 500px; /* Adjust height as necessary */
     overflow: hidden;
-    margin-bottom: 20px; /* Add some space below the slider */
+    margin-bottom: 20px;
 }
 
 .slides {
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 400%; /* 100% for each image, adjust if more images are added */
     transition: transform 0.5s ease-in-out;
 }
 
@@ -238,5 +237,4 @@ footer button:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: none; /* Ensure only one image shows at a time */
 }
