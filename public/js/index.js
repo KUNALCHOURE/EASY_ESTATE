@@ -1,24 +1,17 @@
 let slideIndex = 0;
-let direction = 1; // 1 means moving forward, -1 means moving backward
-const slideInterval = 3000; // Time in milliseconds for each slide
+let slides = document.querySelectorAll('.slides img');
+let totalSlides = slides.length;
 
 function showSlides() {
-    const slides = document.querySelector('.slides');
-    const totalSlides = slides.children.length;
-
-    // Calculate the transform value to show the correct image
-    const offset = -slideIndex * 100; // Move by 100% for each image
-    slides.style.transition = "transform 0.5s ease-in-out"; // Smooth transition
-    slides.style.transform = `translateX(${offset}%)`;
-
-    // Update the slideIndex based on the current direction
-    slideIndex += direction;
-
-    // Reverse direction if the last or first slide is reached
-    if (slideIndex === totalSlides - 1 || slideIndex === 0) {
-        direction *= -1; // Reverse the direction
+    // Increment slideIndex until it reaches the second-to-last image
+    if (slideIndex < totalSlides - 2) {
+        slideIndex++;
+    } else {
+        // Reset to the first slide
+        slideIndex = 0;
     }
+    document.querySelector('.slides').style.transform = `translateX(-${slideIndex * 1536}px)`;
 }
 
-// Run the showSlides function every 'slideInterval' milliseconds
-setInterval(showSlides, slideInterval);
+// Slide every 3 seconds
+setInterval(showSlides, 3000);
