@@ -15,7 +15,8 @@ nav {
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid #ddd;
-    background-color: #f8f8f8;
+    background-color: #333;
+    color: white;
 }
 
 nav .logo h1 {
@@ -66,7 +67,7 @@ nav .nav .post-property:hover {
     position: relative;
     width: 100%;
     max-width: 1536px;
-    height: 854px;
+    height: 500px;
     margin: 0 auto;
     overflow: hidden;
     opacity: 0.7;
