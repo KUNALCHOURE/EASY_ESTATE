@@ -1,0 +1,26 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="form-container border border p-3 rounded">
+                <h3 class="text-center">Login</h3>
+                <form action="/home/login" method="POST" class="auth-form needs-validation" novalidate>
+                    <div class="mb-3 mt-2">
+                        <label for="login-username-email" class="form-label">Username or Email</label>
+                        <input type="text" class="form-control" id="login-username-email" name="username_email" required>
+                        <div class="invalid-feedback">
+                            Please enter your username or email.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="login-password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="login-password" name="password" required>
+                        
+                    </div>
+                    
+                    <button type="submit" class="btn btn-danger w-100 mb-3">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

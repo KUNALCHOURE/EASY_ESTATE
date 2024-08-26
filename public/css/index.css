@@ -18,6 +18,9 @@ nav {
     color: white;
     z-index: 10; /* Ensure navbar is above content overlay */
 }
+nav .logo a{
+    text-decoration: none;
+}
 
 nav .logo h1 {
     margin: 0;
