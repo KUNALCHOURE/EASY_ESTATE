@@ -1,8 +1,8 @@
-<div class="container mt-5">
+<div class="container mt-3 mb-3">
     <div class=" row justify-content-center">
         <div class="col-md-6 col-lg-4">
-            <div class="form-container border">
-                <h3>Sign Up</h3>
+            <div class="form-container p-3 border border rounded">
+                <h3 class="text-center">Sign Up</h3>
                 <form action="/home/signup" method="POST" class="auth-form needs-validation" novalidate>
                     <div class="mb-3 mt-2">
                         <label for="signup-username" class="form-label">Username</label>
@@ -23,12 +23,16 @@
                     <div class="mb-3">
                         <label for="signup-password" class="form-label">Password</label>
                         <input type="password" class="form-control" id="signup-password" name="password" required>
-                        <div class="invalid-feedback">
-                            Please enter a password.
-                        </div>
+                       
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="conform-password" class="form-label">Conform Password</label>
+                        <input type="password" class="form-control" id="conform-password" name="conform-password" required>
+                       
                     </div>
                     
-                    <button type="submit" class="btn btn-danger w-100">Sign Up</button>
+                    <button type="submit" class="btn btn-danger w-100 mb-3">Sign Up</button>
                 </form>
             </div>
         </div>
