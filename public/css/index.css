@@ -216,7 +216,7 @@ footer {
     background-color: #2C2C2C;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     margin-top: auto;
     z-index: 10; /* Ensure footer is above content overlay */
 }
