@@ -14,11 +14,11 @@ function showSlides() {
     document.querySelector('.slides').style.transform = `translateX(-${slideIndex * slideWidth}px)`;
 }
 
-// Adjust the width dynamically in case the window is resized
+
 window.addEventListener('resize', () => {
     slideWidth = slides[0].clientWidth;
     document.querySelector('.slides').style.transform = `translateX(-${slideIndex * slideWidth}px)`;
 });
 
-// Slide every 3 seconds
+
 setInterval(showSlides, 3000);

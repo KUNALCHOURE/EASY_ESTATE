@@ -238,3 +238,7 @@ footer button {
 footer button:hover {
     background-color: #c00;
 }
+
+.mainform{
+    display: flex;
+}
