@@ -5,7 +5,14 @@ html, body {
     color: #333;
     display: flex;
     flex-direction: column;
-    
+}
+.container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
 nav {
@@ -14,11 +21,12 @@ nav {
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid #ddd;
-    background-color: #2C2C2C ;
+    background-color: #2C2C2C;
     color: white;
     z-index: 10; /* Ensure navbar is above content overlay */
 }
-nav .logo a{
+
+nav .logo a {
     text-decoration: none;
 }
 
@@ -53,7 +61,6 @@ nav .nav button {
 nav .nav button:hover {
     background-color: #f9f9f9;
     color: black;
-
 }
 
 nav .nav .post-property {
@@ -72,7 +79,6 @@ nav .nav .post-property:hover {
 .image-slider {
     position: relative;
     width: 100%;
-    max-width: 1536px;
     height: 500px;
     margin: 0 auto;
     overflow: hidden;
@@ -82,14 +88,14 @@ nav .nav .post-property:hover {
 
 .slides {
     display: flex;
-    width: calc(1536px * 6);
-    height: 854px;
-    transition: transform 3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    transition: transform 2s ease-in-out;
 }
 
 .slides img {
-    width: 1536px;
-    height: 854px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     flex-shrink: 0;
 }
@@ -104,10 +110,9 @@ nav .nav .post-property:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   /* background: rgba(255, 255, 255, 0.5); /* Reduced opacity to let images show through */
     padding: 20px;
     text-align: center;
-    z-index: 1; /* Ensure it sits above the slider but below the navbar */
+    z-index: 5; /* Ensure it sits above the slider but below the navbar */
 }
 
 .banner h2 {
@@ -208,8 +213,8 @@ nav .nav .post-property:hover {
 }
 
 footer {
-    background-color: #2C2C2C ;
-color: white;
+    background-color: #2C2C2C;
+    color: white;
     text-align: center;
     padding: 20px;
     margin-top: auto;
