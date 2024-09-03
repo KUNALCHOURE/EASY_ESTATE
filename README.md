@@ -34,12 +34,13 @@ This project is a straightforward real estate website with essential user authen
 - Click on the `Sign Up` link to create a new account by filling out the required fields.
 - Use the provided forms to manage user authentication.
 
-## Screenshot
-![Home Page Screenshot] (![Screenshot 2024-08-23 225031](https://github.com/user-attachments/assets/5f556137-70bc-4777-a9cd-8fcff90f82f9)
-)
-![Login Page Screenshot](![image](https://github.com/user-attachments/assets/1f8e6cc6-4512-48bb-a979-bff4f7fceaf4)
-)
+## Screenshots
 
-![Sign Up Page Screenshot](![Screenshot 2024-09-03 194409](https://github.com/user-attachments/assets/29d744af-cb59-475d-b092-1d35a1b39d2c)
-)
+### Home Page
+![Home Page Screenshot](https://github.com/user-attachments/assets/5f556137-70bc-4777-a9cd-8fcff90f82f9)
 
+### Login Page
+![Login Page Screenshot](https://github.com/user-attachments/assets/8f0bb618-c865-4f01-b4a7-9d79e1f402f9)
+
+### Sign Up Page
+![Sign Up Page Screenshot](https://github.com/user-attachments/assets/29d744af-cb59-475d-b092-1d35a1b39d2c)
