@@ -1,4 +1,4 @@
-# Real Estate Website
+# Real Estate Webpage
 
 ## Overview
 This project is a straightforward real estate website with essential user authentication features. It includes **Login** and **Sign Up** pages, built using **Node.js** and **Express** for the backend, with **EJS** as the templating engine. The application is designed to offer a simple user experience for managing account authentication.
